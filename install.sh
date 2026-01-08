@@ -52,7 +52,7 @@ while true; do
     echo ""
     echo "====== WiFi FIX (Ubuntu Touch) ======"
     echo "1) install   (enable fix at boot)"
-    echo "5) uninstall (remove systemd service)"
+    echo "3) uninstall (remove systemd service)"
     echo "9) exit"
     echo "===================================="
     printf "Select option: "
@@ -62,7 +62,7 @@ while true; do
         1|install)
             install_service
             ;;
-        5|uninstall)
+        3|uninstall)
             uninstall_service
             ;;
          7|readme)
