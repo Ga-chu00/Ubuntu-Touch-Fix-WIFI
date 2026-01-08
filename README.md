@@ -10,7 +10,7 @@ git clone https://github.com/Ga-chu00/Ubuntu-Touch-Fix-WIFI.git && cd Ubuntu-Tou
  OR
 
 ```
-wget -O  https://github.com/Ga-chu00/Ubuntu-Touch-Fix-WIFI/blob/main/install.sh && chmod +x install.sh && ./install.sh
+wget https://github.com/Ga-chu00/Ubuntu-Touch-Fix-WIFI/blob/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 
