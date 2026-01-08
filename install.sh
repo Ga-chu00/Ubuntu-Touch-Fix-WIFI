@@ -44,12 +44,16 @@ uninstall_service() {
     echo ">> Service removed, default settings restored"
 }
 
+readme() {
+echo ""
+}
+
 while true; do
     echo ""
     echo "====== WiFi FIX (Ubuntu Touch) ======"
     echo "1) install   (enable fix at boot)"
-    echo "2) uninstall (remove systemd service)"
-    echo "3) exit"
+    echo "5) uninstall (remove systemd service)"
+    echo "9) exit"
     echo "===================================="
     printf "Select option: "
     read choice
@@ -58,10 +62,13 @@ while true; do
         1|install)
             install_service
             ;;
-        2|uninstall)
+        5|uninstall)
             uninstall_service
             ;;
-        3|exit)
+         7|readme)
+            readme
+            ;;
+        9|exit)
             echo "Exiting."
             exit 0
             ;;
