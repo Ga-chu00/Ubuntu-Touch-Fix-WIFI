@@ -35,7 +35,7 @@ uninstall_service() {
 
     systemctl stop $SERVICE_NAME 2>/dev/null
     systemctl disable $SERVICE_NAME 2>/dev/null
-    rm -f $SERVICE_PATH
+    sudo rm -f $SERVICE_PATH
     systemctl daemon-reload
 
     /usr/sbin/iw dev $IFACE set power_save on
